@@ -1,0 +1,6 @@
+{
+    "scripts": {
+        "build": "tsc",
+        "run": "npm run build && node js/replace.js"
+    }
+}
