@@ -1,0 +1,15 @@
+{
+  "name": "startly-site",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.html",
+  "scripts": {
+    "build:svelte": "npm run build --prefix view",
+    "build:scripts": "npm run build:run --prefix scripts",
+    "build": "npm run build:svelte && npm run build:scripts",
+    "i": "cd scripts && npm i && cd ../view && npm i && cd .. && clear"
+  },
+  "keywords": [],
+  "author": "josh-codes",
+  "license": "GPL-3.0"
+}
