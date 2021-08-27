@@ -1,4 +1,4 @@
-<script lang="typescript">
+<script lang="ts">
     import { fly } from 'svelte/transition';
     export let title:string;
     export let desc:string;

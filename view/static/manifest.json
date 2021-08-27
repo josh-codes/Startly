@@ -12,7 +12,7 @@
         "512": "icons/512.png"
     },
     "chrome_url_overrides" : {
-        "newtab": "view/index.html"
+        "newtab": "pages/index.html"
     },
     "permissions": [
         "tabs",

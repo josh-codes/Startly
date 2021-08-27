@@ -8,8 +8,8 @@ const config = {
 	preprocess: preprocess(),
 	kit: {
 		adapter: adapter({
-			pages: 'build/view',
-			assets: 'build/view',
+			pages: '../app/pages',
+			assets: '../app',
 			fallback: null
 		}),
 		target: "body"
