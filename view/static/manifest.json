@@ -2,7 +2,7 @@
     "manifest_version": 3,
     "name": "Starty",
     "githuburl": "https://github.com/josh-codes/Startly",
-    "version": "0.0.1",
+    "version": "0.0.2",
     "update_url": "https://clients2.google.com/service/update2/crx",
     "description": "A nice simple and beautiful startpage.",
     "icons": {

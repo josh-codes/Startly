@@ -8,7 +8,7 @@
     "build:svelte": "npm run build --prefix view",
     "build:scripts": "npm run build:run --prefix scripts",
     "build:firefox": "npm run build:firefox --prefix scripts",
-    "build:webext": "echo a > app.zip && rm app.zip && cd app && web-ext build && mv web-ext-artifacts/starty-0.0.1.zip ../app.zip && cd .. && rmdir app/web-ext-artifacts",
+    "build:webext": "echo a > app.zip && rm app.zip && cd app && web-ext build && mv web-ext-artifacts/starty-0.0.2.zip ../app.zip && cd .. && rmdir app/web-ext-artifacts",
     "build:zip": "echo a > .DS_Store && rm **/.DS_Store && echo a > app.zip && rm app.zip && zip -r app.zip app",
     "build:all": "npm run build:svelte && npm run build:scripts",
     "chrome": "npm run build:all && npm run build:zip",
