@@ -5,20 +5,17 @@
     $: url = "/fallback.jpeg";
     onMount(async ()=>{
         try {
-            const head = new Headers();
-            head.append('pragma', 'no-cache');
-            head.append('cache-control', 'no-cache');
-            const reqsetup = {method: 'GET', headers: head};
-            await fetch("https://example.com", reqsetup);
-            settings.subscribe((value:any)=>{
-            if (!value.bg.hook) {
-                value.bg = {
-                    hook: 1,
-                    url: "https://source.unsplash.com/user/nullifiedjosh/likes/2560×1440"
-                }
+            if (window.navigator.onLine) {
+                settings.subscribe((value:any)=>{
+                    if (!value.bg.hook) {
+                        value.bg = {
+                            hook: 1,
+                            url: "https://source.unsplash.com/user/nullifiedjosh/likes/2560×1440"
+                        }
+                    }
+                    url = value.bg.url;
+                })
             }
-            url = value.bg.url;
-        })
             
         } catch {
             url = "/fallback.jpeg";

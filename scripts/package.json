@@ -2,6 +2,7 @@
     "type": "module",
     "scripts": {
         "build:run": "npm run build && npm run run",
+        "build:firefox": "node js/firefox.js",
         "build": "tsc",
         "run": "node js/replace.js"
     },

@@ -12,7 +12,7 @@ const get = async () => {
                 resolve(json);
             });
         } catch {
-            reject("Window.chrome is missing...");
+            reject("Browser is missing...");
         }
     })
     return promise;
