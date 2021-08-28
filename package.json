@@ -16,5 +16,8 @@
     "i": "npm i && cd scripts && npm i && cd ../view && npm i && cd .. && clear"
   },
   "keywords": [],
-  "author": "josh-codes"
+  "author": "josh-codes",
+  "dependencies": {
+    "web-ext": "^6.3.0"
+  }
 }
